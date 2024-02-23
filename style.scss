@@ -39,6 +39,7 @@
                     font-size: clamp(1rem, 2rem, 3rem);
                     font-family: 'Courier New', Courier, monospace;
                     #smallest {
+                        display: flex;
                         color: orange;
                     }
                     #smaller {
@@ -101,6 +102,7 @@
                         display: none;
                     }
                     #smaller {
+                        display: flex;
                         color: blue;
                     }
                     #medium {
@@ -199,7 +201,7 @@
                 height: 100vh;
                 color: darkmagenta;
                 .section_title {
-                    font-size: clamp(1rem, 2rem, 3rem);
+                    font-size: clamp(1rem, 3.5rem, 5rem);
                 }
                 .section_photo {
                     #logo_one {
@@ -209,7 +211,7 @@
                 }
                 .section_words {
                     text-align: center;
-                    font-size: clamp(.8rem, 1.2rem, 2rem);
+                    font-size: clamp(.8rem, 2.8rem, 4rem);
                 }
                 .section_size {
                     font-size: clamp(1rem, 2rem, 3rem);
@@ -224,6 +226,7 @@
                         display: none;
                     }
                     #large {
+                        display: flex;
                         color: darkmagenta;
                     }
                     #largest {
@@ -231,6 +234,120 @@
                     }
                     #ex-large {
                         display: none;
+                    }
+                }    
+            }
+        }
+    }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: darkblue;
+        height: 100vh;
+        .main_container {
+            background-color: black;
+            .section_one {
+                border: 10px solid darkturquoise;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5vh;
+                height: 100vh;
+                color: darkturquoise;
+                .section_title {
+                    font-size: clamp(1rem, 3.5rem, 5rem);
+                }
+                .section_photo {
+                    #logo_one {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .section_words {
+                    text-align: center;
+                    font-size: clamp(.8rem, 2.8rem, 4rem);
+                }
+                .section_size {
+                    font-size: clamp(1rem, 2rem, 3rem);
+                    font-family: 'Courier New', Courier, monospace;
+                    #smallest {
+                        display: none;
+                    }
+                    #smaller {
+                        display: none;
+                    }
+                    #medium {
+                        display: none;
+                    }
+                    #large {
+                        display: none;
+                    }
+                    #largest {
+                        display: flex;
+                        color: darkturquoise;
+                    }
+                    #ex-large {
+                        display: none;
+                    }
+                }    
+            }
+        }
+    }
+}
+
+// The LARGEST monitors (1500px and above)
+@media screen and (min-width: 1500px) {
+    body {
+        background-color: red;
+        height: 100vh;
+        .main_container {
+            background-color: black;
+            .section_one {
+                border: 10px solid red;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5vh;
+                height: 100vh;
+                color: red;
+                .section_title {
+                    font-size: clamp(1rem, 4.5rem, 5rem);
+                }
+                .section_photo {
+                    #logo_one {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .section_words {
+                    text-align: center;
+                    font-size: clamp(.8rem, 3rem, 4rem);
+                }
+                .section_size {
+                    font-size: clamp(1rem, 2.5rem, 3rem);
+                    font-family: 'Courier New', Courier, monospace;
+                    #smallest {
+                        display: none;
+                    }
+                    #smaller {
+                        display: none;
+                    }
+                    #medium {
+                        display: none;
+                    }
+                    #large {
+                        display: none;
+                    }
+                    #largest {
+                        display: none;
+                    }
+                    #ex-large {
+                        display: flex;
+                        color: red;
                     }
                 }    
             }
