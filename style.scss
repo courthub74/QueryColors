@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+}
+
+/* For extremely small screen devices (595px and below) */
+// Mobile Phones (Portrait)
+@media screen and (max-width: 600px) {
+    body {
+        background-color: darkblue;
+        height: 100vh;
+        .main_container {
+            background-color: black;
+            .navbar {
+                display: none;
+            }
+            .section_one {
+                border: 10px solid orange;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5vh;
+                height: 100vh;
+                color: orange;
+                .section_title {
+                    font-size: clamp(1rem, 2rem, 3rem);
+                }
+                .section_photo {
+                    #logo_one {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .section_words {
+                    text-align: center;
+                    font-size: clamp(.8rem, 1.2rem, 2rem);
+                }
+                .section_size {
+                    font-size: clamp(1rem, 2rem, 3rem);
+                    font-family: 'Courier New', Courier, monospace;
+                    #smallest {
+                        color: orange;
+                    }
+                    #smaller {
+                        display: none;
+                    }
+                    #medium {
+                        display: none;
+                    }
+                    #large {
+                        display: none;
+                    }
+                    #largest {
+                        display: none;
+                    }
+                    #ex-large {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Small screen devices (601px and above) */
+@media screen and (min-width: 601px) {
+    body {
+        background-color: darkred;
+        height: 100vh;
+        .main_container {
+            background-color: black;
+            .navbar {
+                display: none;
+            }
+            .section_one {
+                border: 10px solid blue;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5vh;
+                height: 100vh;
+                color: blue;
+                .section_title {
+                    font-size: clamp(1rem, 2rem, 3rem);
+                }
+                .section_photo {
+                    #logo_one {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .section_words {
+                    text-align: center;
+                    font-size: clamp(.8rem, 1.2rem, 2rem);
+                }
+                .section_size {
+                    font-size: clamp(1rem, 2rem, 3rem);
+                    font-family: 'Courier New', Courier, monospace;
+                    #smallest {
+                        display: none;
+                    }
+                    #smaller {
+                        color: blue;
+                    }
+                    #medium {
+                        display: none;
+                    }
+                    #large {
+                        display: none;
+                    }
+                    #largest {
+                        display: none;
+                    }
+                    #ex-large {
+                        display: none;
+                    }
+                }    
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: darkgreen;
+        height: 100vh;
+        .main_container {
+            background-color: black;
+            .navbar {
+                display: none;
+            }
+            .section_one {
+                border: 10px solid darkgreen;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5vh;
+                height: 100vh;
+                color: darkgreen;
+                .section_title {
+                    font-size: clamp(1rem, 3rem, 5rem);
+                }
+                .section_photo {
+                    #logo_one {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .section_words {
+                    text-align: center;
+                    font-size: clamp(.8rem, 2rem, 3rem);
+                }
+                .section_size {
+                    font-size: clamp(1rem, 2.5rem, 3rem);
+                    #smallest {
+                        display: none;
+                    }
+                    #smaller {
+                        display: none;
+                    }
+                    #medium {
+                        display: flex;
+                        color: darkgreen;
+                    }
+                    #large {
+                        display: none;
+                    }
+                    #largest {
+                        display: none;
+                    }
+                    #ex-large {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Big screen devices (889px and above) */
+@media screen and (min-width: 889px) {
+    body {
+        background-color: darkslategray;
+        height: 100vh;
+        .main_container {
+            display: none;
+        }
+    }
+}
