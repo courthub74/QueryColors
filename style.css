@@ -176,6 +176,52 @@
     height: 100vh;
   }
   body .main_container {
+    background-color: black;
+  }
+  body .main_container .navbar {
+    display: none;
+  }
+  body .main_container .section_one {
+    border: 10px solid darkmagenta;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+    height: 100vh;
+    color: darkmagenta;
+  }
+  body .main_container .section_one .section_title {
+    font-size: 2rem;
+  }
+  body .main_container .section_one .section_photo #logo_one {
+    width: 100px;
+    height: 100px;
+  }
+  body .main_container .section_one .section_words {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  body .main_container .section_one .section_size {
+    font-size: 2rem;
+    font-family: "Courier New", Courier, monospace;
+  }
+  body .main_container .section_one .section_size #smallest {
+    display: none;
+  }
+  body .main_container .section_one .section_size #smaller {
+    display: none;
+  }
+  body .main_container .section_one .section_size #medium {
+    display: none;
+  }
+  body .main_container .section_one .section_size #large {
+    color: darkmagenta;
+  }
+  body .main_container .section_one .section_size #largest {
+    display: none;
+  }
+  body .main_container .section_one .section_size #ex-large {
     display: none;
   }
 }/*# sourceMappingURL=style.css.map */
