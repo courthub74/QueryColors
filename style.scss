@@ -57,6 +57,9 @@
                     #ex-large {
                         display: none;
                     }
+                    #ex-ex-large {
+                        display: none;
+                    }
                 }
             }
         }
@@ -117,6 +120,9 @@
                     #ex-large {
                         display: none;
                     }
+                    #ex-ex-large {
+                        display: none;
+                    }
                 }    
             }
         }
@@ -173,6 +179,9 @@
                         display: none;
                     }
                     #ex-large {
+                        display: none;
+                    }
+                    #ex-ex-large {
                         display: none;
                     }
                 }
@@ -235,6 +244,9 @@
                     #ex-large {
                         display: none;
                     }
+                    #ex-ex-large {
+                        display: none;
+                    }
                 }    
             }
         }
@@ -292,6 +304,9 @@
                     #ex-large {
                         display: none;
                     }
+                    #ex-ex-large {
+                        display: none;
+                    }
                 }    
             }
         }
@@ -299,7 +314,7 @@
 }
 
 // The LARGEST monitors (1500px and above)
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1500px) and (max-width: 1899px) {
     body {
         background-color: red;
         height: 100vh;
@@ -349,8 +364,88 @@
                         display: flex;
                         color: red;
                     }
+                    #ex-ex-large {
+                        display: none;
+                    }
                 }    
             }
         }
+        .card_container {
+            container-type: inline-size;
+            color: wheat;
+        }
+    }
+}
+
+
+// The LARGEST monitors (1900px and above)
+@media screen and (min-width: 1900px) {
+    body {
+        background-color: blue;
+        height: 100vh;
+        .main_container {
+            background-color: black;
+            .section_one {
+                border: 10px solid blue;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5vh;
+                height: 100vh;
+                color: blue;
+                .section_title {
+                    font-size: clamp(1rem, 4.5rem, 5rem);
+                }
+                .section_photo {
+                    #logo_one {
+                        width: 100px;
+                        height: 100px;
+                    }
+                }
+                .section_words {
+                    text-align: center;
+                    font-size: clamp(.8rem, 3rem, 4rem);
+                }
+                .section_size {
+                    font-size: clamp(1rem, 2.5rem, 3rem);
+                    font-family: 'Courier New', Courier, monospace;
+                    #smallest {
+                        display: none;
+                    }
+                    #smaller {
+                        display: none;
+                    }
+                    #medium {
+                        display: none;
+                    }
+                    #large {
+                        display: none;
+                    }
+                    #largest {
+                        display: none;
+                    }
+                    #ex-large {
+                        display: none;
+                    }
+                    #ex-ex-large {
+                        display: flex;
+                        color: blue;
+                    }
+                }    
+            }
+        }
+        .card_container {
+            container-type: inline-size;
+            color: wheat;
+        }
+    }
+}
+
+// Container query for card_container
+@container (min-width: 600px) {
+    .card_container {
+        font-size: 10rem;
+        color: red;
     }
 }
